@@ -80,8 +80,11 @@
   }
   
   .header-text h1 {
-    font-size: 50px;
-    margin-top: 20px;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 20px;
+  font-weight: 600;
+    
   }
   
   .header-text p {
