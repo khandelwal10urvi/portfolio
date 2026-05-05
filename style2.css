@@ -83,12 +83,23 @@ nav .fas {
 .header-text h1 {
   font-size: 48px;
   line-height: 1.2;
-  margin-top: 20px;
   font-weight: 600;
 }
 
 .header-text h1 span {
   color: #ff004f;
+}
+
+.header-text h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.header-text .role {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #ccc;
 }
 
 .header-image img {
