@@ -1,0 +1,429 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ff004f;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .fas {
+  display: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.header-text {
+  color: #fff;
+  font-size: 30px;
+  max-width: 500px;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #ff004f;
+}
+
+.header-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 5px solid #e4dd08ee;
+}
+
+/* About */
+ .about {
+
+  margin-top: 20px;
+
+}
+
+
+.about-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 40px 20px;
+
+}
+
+
+.about-text {
+
+  max-width: 700px;
+
+  text-align: center;
+
+}
+
+
+.about-text h1 {
+
+  font-size: 48px;
+
+  color: white;
+
+  margin-bottom: 20px;
+
+}
+
+
+.about-text p {
+
+  font-size: 18px;
+
+  color: white;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+
+}
+
+
+.tab-title {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 20px 0 40px;
+
+  flex-wrap: wrap;
+
+}
+
+
+.tab-links {
+
+  margin: 0 20px;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  position: relative;
+
+  color: white;
+
+}
+
+
+.tab-links::after {
+
+  content: '';
+
+  width: 0;
+
+  height: 3px;
+
+  background: #ff004f;
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -8px;
+
+  transition: 0.5s;
+
+}
+
+
+.tab-links.active-link::after {
+
+  width: 50%;
+
+}
+
+
+.tab-contents {
+
+  display: none;
+
+  color: white;
+
+  text-align: left;
+
+}
+
+
+.tab-contents.active-tab {
+
+  display: block;
+
+}
+
+
+.tab-contents ul li {
+
+  list-style: none;
+
+  margin: 10px 0;
+
+  padding: 20px; /* Add internal spacing for the highlight box */
+
+    background: #262626; /* Dark background for the highlighted box */
+
+    border-radius: 10px; /* Rounded corners */
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+
+    transition: transform 0.4s ease, background 0.4s ease; /* Smooth hover transition */
+
+    position: relative;
+
+}
+
+
+.tab-contents ul li:hover {
+
+    transform: translateY(-8px); /* Lift the box slightly on hover */
+
+    background: #3a3a3a; /* Slightly lighter background on hover */
+
+    border: 1px solid #ff004f; /* Add a subtle accent border on hover */
+
+}
+
+
+.tab-contents ul li span {
+
+  color: #b54769;
+
+  font-size: 14px;
+
+  color: #ff004f; /* Keep your accent color for the main title/category */
+
+    font-size: 1.1em; /* Make the main title slightly larger */
+
+    font-weight: 600; /* Make it bolder */
+
+    display: block; /* Ensures it takes its own line */
+
+    margin-bottom: 5px;
+
+} 
+
+/* Contact */
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sub-title {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-left p {
+  color: #fff;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ff004f;
+  padding: 10px 20px;
+  border: 2px solid #ff004f;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-right form {
+  width: 100%;
+  color: #fff;
+}
+
+form input, form textarea {
+  width: 100%;
+  background: #262626;
+  border: 0;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+/* Footer */
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  background: #262626;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.copyright i {
+  color: #ff004f;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .header-text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  nav ul li {
+    margin: 25px 0;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+    .tab-contents ul li {
+        padding: 15px; /* Reduce padding on smaller screens */
+        margin-bottom: 15px; /* Adjust margin on smaller screens */
+    }
+    .tab-contents ul li span {
+        font-size: 1em; /* Adjust title font size */
+    }
+    .tab-contents ul li {
+        font-size: 14px; /* Adjust general text size */
+    }
+}
